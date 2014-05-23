@@ -1,0 +1,16 @@
+[alias]
+    a = add -p
+    amend = commit --amend
+    br = branch
+    co = checkout
+    cm = commit
+    st = status
+[color]
+	ui = true
+[core]
+	excludesfile = ~/guilload/gitignore
+[user]
+	name = Adrien Guillo
+	email = adrien.guillo@gmail.com
+[pull]
+	rebase = true

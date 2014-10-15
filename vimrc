@@ -15,6 +15,9 @@ filetype plugin on
 " Use spaces instead of tabs
 set expandtab
 
+" Remove trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
+
 " Be smart when using tabs ;)
 set smarttab
 

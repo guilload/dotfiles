@@ -8,6 +8,7 @@ WORKSPACE = HOME + "Workspace/"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/trusty64"
+  config.vm.host_name = "drill"
   config.vm.synced_folder WORKSPACE, "/home/guilload/Workspace"
   config.vm.synced_folder WORKSPACE + "salt/roots", "/srv"
 
@@ -21,4 +22,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     salt.run_highstate = true
 
   end
+
 end

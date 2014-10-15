@@ -15,6 +15,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.username = "guilload"
   config.ssh.private_key_path = HOME + ".ssh/id_rsa"
 
+  config.vm.provider "virtualbox" do |v|
+    v.cpus = 2
+    v.memory = 1024
+    v.name = "drill"
+
+  end
+
   config.vm.provision :salt do |salt|
     salt.colorize = true
     salt.log_level = "info"

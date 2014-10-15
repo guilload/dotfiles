@@ -1,6 +1,6 @@
 [alias]
-    a = add -p
-    amend = commit --amend
+    ad = add -p
+    am = commit --amend
     br = branch
     co = checkout
     cm = commit

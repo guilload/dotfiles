@@ -1,0 +1,24 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+
+HOME = "/Users/guilload/"
+WORKSPACE = HOME + "Workspace/"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.synced_folder WORKSPACE, "/home/guilload/Workspace"
+  config.vm.synced_folder WORKSPACE + "salt/roots", "/srv"
+
+  config.ssh.username = "guilload"
+  config.ssh.private_key_path = HOME + ".ssh/id_rsa"
+
+  config.vm.provision :salt do |salt|
+    salt.colorize = true
+    salt.log_level = "info"
+    salt.minion_config = WORKSPACE + "salt/minion"
+    salt.run_highstate = true
+
+  end
+end

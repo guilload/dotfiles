@@ -3,7 +3,7 @@
     am = commit --amend
     br = branch
     co = checkout
-    cm = commit
+    cm = commit -v
     st = status
 [color]
 	ui = true

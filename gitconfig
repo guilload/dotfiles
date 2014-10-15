@@ -7,8 +7,9 @@
     df = diff
     st = status
 [color]
-	ui = true
+	ui = auto
 [core]
+	editor = vim
 	excludesfile = ~/guilload/gitignore
 [user]
 	name = Adrien Guillo

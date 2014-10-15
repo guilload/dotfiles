@@ -4,6 +4,7 @@
     br = branch
     co = checkout
     cm = commit -v
+    df = diff
     st = status
 [color]
 	ui = true

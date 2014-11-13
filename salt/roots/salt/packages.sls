@@ -4,6 +4,7 @@ default-packages:
       - ack-grep
       - cloc
       - htop
+      - ntp
       - python-dev
       - vim
 

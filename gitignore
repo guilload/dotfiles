@@ -44,3 +44,5 @@ nosetests.xml
 build/
 node_modules/
 vendor/
+
+metastore_db/

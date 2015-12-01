@@ -18,3 +18,5 @@
 	email = adrien.guillo@gmail.com
 [pull]
 	rebase = true
+[merge]
+	conflictstyle = diff3

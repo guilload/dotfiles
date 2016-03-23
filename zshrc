@@ -37,6 +37,10 @@ plugins=(brew git pip python vagrant virtualenvwrapper sublime)
 alias c='pygmentize -O style=manni -f console256 -g'
 alias less='less -r'
 
+flushdnscache() {
+  sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; 
+}
+
 source "$ZSH/oh-my-zsh.sh"
 #source "$HOME/.aws/aws_zsh_completer.sh"
 source "/usr/local/bin/virtualenvwrapper.sh"

@@ -3,6 +3,7 @@
     am = commit --amend
     br = branch
     co = checkout
+    cob = checkout -b
     cm = commit -v
     df = diff
     pl = pull

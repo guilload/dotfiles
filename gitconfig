@@ -9,6 +9,7 @@
     df = diff
     pl = pull
     ph = push
+    rb = rebase
     st = status
 [color]
 	ui = auto

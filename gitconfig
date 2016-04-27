@@ -4,7 +4,7 @@
     br = branch
     co = checkout
     cob = checkout -b
-    cm = commit -v
+    cm = commit -v -S
     df = diff
     pl = pull
     ph = push

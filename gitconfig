@@ -5,6 +5,7 @@
     co = checkout
     cob = checkout -b
     cm = commit -v -S
+    cma = commit --amend -v -S
     df = diff
     pl = pull
     ph = push

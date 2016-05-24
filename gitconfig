@@ -10,6 +10,7 @@
     lg = log --graph --oneline --decorate --all
     pl = pull
     ph = push
+    pho = push origin
     rb = rebase
     st = status
 [color]

@@ -12,6 +12,7 @@
     ph = push
     pho = push origin
     rb = rebase
+    rh = reset --hard
     st = status
 [color]
 	ui = auto

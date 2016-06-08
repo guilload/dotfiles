@@ -1,6 +1,5 @@
 [alias]
     ad = add -p
-    am = commit --amend
     br = branch
     co = checkout
     cob = checkout -b
@@ -10,9 +9,14 @@
     fclean = clean -fdx
     lg = log --graph --oneline --decorate --all
     pl = pull
+    plo = pull origin
     ph = push
     pho = push origin
+    phf = push -f
+    phfo = push -f origin
     rb = rebase
+    rbi = rebase -i
+    rbc = rebase --continue
     rh = reset --hard
     st = status
 [color]

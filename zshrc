@@ -41,7 +41,7 @@ flushdnscache() {
   sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; 
 }
 
-# Colorized man pages
+# Colorized man pages: http://boredzo.org/blog/archives/2016-08-15/colorized-man-pages-understood-and-customized
 man() {
     env \
         LESS_TERMCAP_mb=$(printf "\e[1;31m") \

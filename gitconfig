@@ -18,6 +18,7 @@
     rbc = rebase --continue
     rbi = rebase -i -S
     rh = reset --hard
+    rma = git ls-files --deleted | git rm
     rs = reset
     rsh = reset HEAD
     rshard = reset --hard

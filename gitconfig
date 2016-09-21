@@ -15,7 +15,7 @@
     phf = push -f
     phfo = push -f origin
     rb = rebase
-    rbi = rebase -i
+    rbi = rebase -i -S
     rbc = rebase --continue
     rh = reset --hard
     st = status

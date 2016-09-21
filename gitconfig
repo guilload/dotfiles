@@ -18,6 +18,9 @@
     rbc = rebase --continue
     rbi = rebase -i -S
     rh = reset --hard
+    rs = reset
+    rsh = reset HEAD
+    rshard = reset --hard
     st = status
 [color]
     ui = auto

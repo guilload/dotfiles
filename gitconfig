@@ -1,35 +1,35 @@
 [alias]
     ad = add -p
     br = branch
-    co = checkout
-    cob = checkout -b
     cm = commit -v -S
     cma = commit --amend -v -S
+    co = checkout
+    cob = checkout -b
     df = diff
     fclean = clean -fdx
     lg = log --graph --oneline --decorate --all
-    pl = pull
-    plo = pull origin
     ph = push
-    pho = push origin
     phf = push -f
     phfo = push -f origin
+    pho = push origin
+    pl = pull
+    plo = pull origin
     rb = rebase
-    rbi = rebase -i -S
     rbc = rebase --continue
+    rbi = rebase -i -S
     rh = reset --hard
     st = status
 [color]
-	ui = auto
+    ui = auto
 [core]
-	editor = vim
-	excludesfile = ~/guilload/gitignore
+    editor = vim
+    excludesfile = ~/guilload/gitignore
 [user]
-	name = Adrien Guillo
-	email = adrien.guillo@gmail.com
+    name = Adrien Guillo
+    email = adrien.guillo@gmail.com
 [pull]
-	rebase = true
+    rebase = true
 [merge]
-	conflictstyle = diff3
+    conflictstyle = diff3
 [rebase]
- 	autostash = true
+    autostash = true

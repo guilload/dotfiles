@@ -5,6 +5,9 @@
     cma = commit --amend -v -S
     co = checkout
     cob = checkout -b
+    cp = cherry-pick -S
+    cpa = cherry-pick --abort
+    cpc = cherry-pick --continue
     df = diff
     fclean = clean -fdx
     lg = log --graph --oneline --decorate --all

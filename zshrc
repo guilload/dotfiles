@@ -37,7 +37,9 @@ plugins=(brew git pip python vagrant virtualenvwrapper sublime)
 alias c='pygmentize -O style=manni -f console256 -g'
 alias less='less -r'
 
+# overcommit
 eval "$(rbenv init -)"
+export GIT_TEMPLATE_DIR=`overcommit --template-dir`
 
 flushdnscache() {
   sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder; 

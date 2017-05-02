@@ -42,3 +42,7 @@
     conflictstyle = diff3
 [rebase]
     autostash = true
+[gpg]
+	program = gpg2
+[commit]
+	gpgsign = true

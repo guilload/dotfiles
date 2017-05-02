@@ -30,19 +30,19 @@
     st = status
 [color]
     ui = auto
+[commit]
+	gpgsign = true
 [core]
     editor = vim
     excludesfile = ~/guilload/gitignore
+[gpg]
+	program = gpg2
+[merge]
+    conflictstyle = diff3
+[pull]
+    rebase = true
+[rebase]
+    autostash = true
 [user]
     name = Adrien Guillo
     email = adrien.guillo@gmail.com
-[pull]
-    rebase = true
-[merge]
-    conflictstyle = diff3
-[rebase]
-    autostash = true
-[gpg]
-	program = gpg2
-[commit]
-	gpgsign = true

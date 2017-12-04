@@ -31,18 +31,25 @@
 [color]
     ui = auto
 [commit]
-	gpgsign = true
+    gpgSign = true
 [core]
     editor = vim
-    excludesfile = ~/guilload/gitignore
+    excludesFile = ~/.gitignore
+    sparseCheckout = true
+    precomposeUnicode = true
 [gpg]
-	program = gpg2
+    program = gpg
 [merge]
-    conflictstyle = diff3
+    conflictStyle = diff3
 [pull]
     rebase = true
+[push]
+    default = simple
 [rebase]
-    autostash = true
+    autoStash = true
+[rerere]
+    enabled = true
 [user]
     name = Adrien Guillo
     email = adrien.guillo@gmail.com
+    signingkey = D752F5C83B224044

@@ -53,3 +53,5 @@
     name = Adrien Guillo
     email = adrien.guillo@gmail.com
     signingkey = D752F5C83B224044
+[includeIf "gitdir:~/Workspace/repositories/airbnb/**"]
+    path = ~/Workspace/repositories/airbnb/.gitconfig

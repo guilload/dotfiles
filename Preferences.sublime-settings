@@ -1,12 +1,23 @@
 {
-	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
-	"ensure_newline_at_eof_on_save": true,
-	"font_size": 12,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"tab_size": 4,
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+    "color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+    "ensure_newline_at_eof_on_save": true,
+    "font_size": 12,
+    "highlight_modified_tabs": true,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "remember_full_screen": true,
+    "remember_open_files": true,
+    "remember_open_folders": true,
+    "rulers": [79],
+    "save_on_focus_lost": true,
+    "show_encoding": true,
+    "show_full_path": true,
+    "show_full_path": true,
+    "show_line_endings": true,
+    "show_minimap": false,
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true
 }

@@ -12,8 +12,8 @@
     fclean = clean -fdx
     lg = log --graph --oneline --decorate --all
     ph = push
-    phf = push -f
-    phfo = push -f origin
+    phf = push --force-with-lease
+    phfo = push --force-with-lease origin
     pho = push origin
     pl = pull
     plo = pull origin

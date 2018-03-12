@@ -46,6 +46,7 @@
 [push]
     default = simple
 [rebase]
+    autoSquash = true
     autoStash = true
 [rerere]
     enabled = true

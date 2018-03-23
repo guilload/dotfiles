@@ -31,7 +31,7 @@
     ss = stash save
     st = status
 [color]
-    ui = auto
+	ui = true
 [commit]
     gpgSign = true
 [core]
@@ -39,6 +39,7 @@
     excludesFile = ~/.gitignore
     sparseCheckout = true
     precomposeUnicode = true
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [gpg]
     program = gpg
 [merge]
@@ -58,3 +59,15 @@
     signingkey = D752F5C83B224044
 [includeIf "gitdir:~/Workspace/repositories/airbnb/**"]
     path = ~/Workspace/repositories/airbnb/.gitconfig
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse

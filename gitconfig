@@ -17,7 +17,9 @@
     pho = push origin
     pl = pull
     plo = pull origin
+    plom = pull origin master
     rb = rebase
+    rbm = rebase master
     rbc = rebase --continue
     rbi = rebase -i -S
     rh = reset --hard

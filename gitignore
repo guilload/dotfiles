@@ -46,3 +46,8 @@ node_modules/
 vendor/
 
 metastore_db/
+
+# Build artefacts
+.idea/
+*.iml
+target/

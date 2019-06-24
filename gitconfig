@@ -2,13 +2,17 @@
     ad = add -p
     br = branch
     cm = commit -v -S
-    cma = commit --amend -v -S
+    cma = commit --amend --no-edit -v -S
+    cmae = commit --amend -v -S
+    cmf = commit --fixup
     co = checkout
     cob = checkout -b
+    cop = checkout --patch
     cp = cherry-pick -S
     cpa = cherry-pick --abort
     cpc = cherry-pick --continue
     df = diff
+    dfc = diff --cached
     fclean = clean -fdx
     lg = log --graph --oneline --decorate --all
     ph = push
@@ -20,11 +24,12 @@
     plom = pull origin master
     rb = rebase
     rbm = rebase master
+    rba = rebase --abort
     rbc = rebase --continue
     rbi = rebase -i -S
-    rh = reset --hard
     rma = git ls-files --deleted | git rm
     rs = reset
+    rss = reset --soft
     rsh = reset HEAD
     rshard = reset --hard
     sp = stash pop
@@ -37,22 +42,26 @@
 [core]
     editor = vim
     excludesFile = ~/.gitignore
-    sparseCheckout = true
-    precomposeUnicode = true
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	sparseCheckout = true
+	precomposeunicode = true
+    pager = diff-so-fancy | less --tabs=4 -RFX
+[diff]
+    colorMoved = default
+	tool = meld
 [gpg]
     program = gpg
 [merge]
     conflictStyle = diff3
+	tool = meld
 [pull]
     rebase = true
 [push]
-    default = simple
+	default = current
 [rebase]
     autoSquash = true
     autoStash = true
 [rerere]
-    enabled = true
+	enabled = true
 [user]
     name = Adrien Guillo
     email = adrien.guillo@gmail.com
@@ -71,3 +80,7 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false

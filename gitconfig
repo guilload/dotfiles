@@ -1,6 +1,7 @@
 [alias]
     ad = add -p
     br = branch
+    brm = branch -m
     cm = commit -v -S
     cma = commit --amend --no-edit -v -S
     cmae = commit --amend -v -S
@@ -14,6 +15,10 @@
     df = diff
     dfc = diff --cached
     fclean = clean -fdx
+    f = fetch
+    fo = fetch origin
+    fom = fetch origin master
+    fop = fetch origin production
     lg = log --graph --oneline --decorate --all
     ph = push
     phf = push --force-with-lease
@@ -24,6 +29,7 @@
     plom = pull origin master
     rb = rebase
     rbm = rebase master
+    rbom = rebase origin master
     rba = rebase --abort
     rbc = rebase --continue
     rbi = rebase -i -S
@@ -35,6 +41,7 @@
     sp = stash pop
     ss = stash save
     st = status
+    sw = show
 [color]
 	ui = true
 [commit]
@@ -84,3 +91,8 @@
 	prompt = false
 [mergetool]
 	prompt = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

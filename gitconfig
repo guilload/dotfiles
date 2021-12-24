@@ -17,8 +17,7 @@
     fclean = clean -fdx
     f = fetch
     fo = fetch origin
-    fom = fetch origin master
-    fop = fetch origin production
+    fom = fetch origin main
     lg = log --graph --oneline --decorate --all
     ph = push
     phf = push --force-with-lease
@@ -26,10 +25,10 @@
     pho = push origin
     pl = pull
     plo = pull origin
-    plom = pull origin master
+    plom = pull origin main
     rb = rebase
-    rbm = rebase master
-    rbom = rebase origin master
+    rbm = rebase main
+    rbom = rebase origin main
     rba = rebase --abort
     rbc = rebase --continue
     rbi = rebase -i -S
@@ -37,6 +36,7 @@
     rs = reset
     rss = reset --soft
     rsh = reset HEAD
+    rshh = reset HEAD^
     rshard = reset --hard
     sp = stash pop
     ss = stash save
@@ -72,9 +72,7 @@
 [user]
     name = Adrien Guillo
     email = adrien.guillo@gmail.com
-    signingkey = 5E99D59F09CDDFBAE7BF06F0642BAB582E16E9BD
-[includeIf "gitdir:~/Workspace/repositories/airbnb/**"]
-    path = ~/Workspace/repositories/airbnb/.gitconfig
+    signingkey = 332DDCE74355704F
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52

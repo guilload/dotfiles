@@ -8,6 +8,7 @@
     cmf = commit --fixup
     co = checkout
     cob = checkout -b
+    com = checkout main
     cop = checkout --patch
     cp = cherry-pick -S
     cpa = cherry-pick --abort

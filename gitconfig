@@ -6,9 +6,13 @@
     cma = commit --amend --no-edit -v -S
     cmae = commit --amend -v -S
     cmf = commit --fixup
+    cmm = commit -m
+    cmw = commit -m "WIP"
     co = checkout
     cob = checkout -b
     com = checkout main
+    coo = checkout --ours
+    cot = checkout --theirs
     cop = checkout --patch
     cp = cherry-pick -S
     cpa = cherry-pick --abort
@@ -38,9 +42,15 @@
     rss = reset --soft
     rsh = reset HEAD
     rshh = reset HEAD^
+    rshhh = reset HEAD^^
     rshard = reset --hard
+    rst = restore
     sp = stash pop
     ss = stash save
+    ssm = stash save -m
+    ssp = stash save -p
+    sspm = stash save -p -m
+    sls = stash list
     st = status
     sw = show
 [color]
@@ -73,7 +83,7 @@
 [user]
     name = Adrien Guillo
     email = adrien.guillo@gmail.com
-    signingkey = 332DDCE74355704F
+    signingkey = B3663023EB330C03
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52

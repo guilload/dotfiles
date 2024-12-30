@@ -51,3 +51,4 @@ metastore_db/
 .idea/
 *.iml
 target/
+bazel*
